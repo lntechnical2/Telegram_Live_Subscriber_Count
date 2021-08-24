@@ -3,16 +3,16 @@
 from pyrogram import Client, filters
 import time 
 ADMIN = 
-TOKEN = " "
-APP_ID = 
-API_HASH = " "
+TOKEN = os.environ.get("TOKEN", "")
+APP_ID = int(os.environ.get("API_ID",12345))
+API_HASH = os.environ.get("API_HASH", "")
 app = Client(
         "liveucount",
         bot_token=TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH)
         
-CH_USER_NAME =  " "
+CH_USER_NAME = os.environ.get("CH_USER_NAME", "")
 x = []
     
 @app.on_message(filters.user(ADMIN) & filters.command("livecount",prefixes='!'))
