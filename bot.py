@@ -2,7 +2,7 @@
 import os
 from pyrogram import Client, filters
 import time 
-ADMIN = os.environ.get("ADMIN", "")
+ADMIN =int(os.environ.get("ADMIN", 923943045))
 TOKEN = os.environ.get("TOKEN", "")
 
 API_ID = int(os.environ.get("API_ID", 12345))
