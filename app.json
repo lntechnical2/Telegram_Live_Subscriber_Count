@@ -1,0 +1,33 @@
+{
+    "name": "Telegram Live Subscriber Count",
+    "description": "Telegram Channel LIve Subscriber Count",
+    "repository": "https://github.com/lntechnical2/Telegram_Live_Subscriber_Count",
+    "success_url": "https://telegram.dog/lntechnical",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "ADMIN": {
+            "description": "Your User ID",
+            "value": ""
+        },
+        "CH_USER_NAME":{ 
+               "description":"Channel User Name Without @",
+                "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
