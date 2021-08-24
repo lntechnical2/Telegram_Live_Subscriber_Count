@@ -4,7 +4,7 @@
     "repository": "https://github.com/lntechnical2/Telegram_Live_Subscriber_Count",
     "success_url": "https://telegram.dog/lntechnical",
     "env": {
-        "APP_ID": {
+        "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
             "value": ""
         },
