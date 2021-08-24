@@ -6,11 +6,8 @@ ADMIN = os.environ.get("ADMIN", "")
 TOKEN = os.environ.get("TOKEN", "")
 APP_ID = int(os.environ.get("API_ID",12345))
 API_HASH = os.environ.get("API_HASH", "")
-app = Client(
-        "liveucount",
-        bot_token=TOKEN,
-        api_id=APP_ID,
-        api_hash=API_HASH)
+
+app = Client("livebot" ,bot_token = TOKEN ,api_id = API_ID ,api_hash = API_HASH )
         
 CH_USER_NAME = os.environ.get("CH_USER_NAME", "")
 x = []
